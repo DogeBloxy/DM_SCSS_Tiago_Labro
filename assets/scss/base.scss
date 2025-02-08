@@ -1,0 +1,53 @@
+@use "mixins";
+@use "variables";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+a {
+    color: variables.$link-text;
+    text-decoration: none;
+    position: relative;
+
+    &:after {
+        @include mixins.after-link
+    }
+
+    &:hover:after {
+        @include mixins.hover-link
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: variables.$primary-color;
+}

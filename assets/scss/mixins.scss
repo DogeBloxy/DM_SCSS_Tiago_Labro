@@ -1,0 +1,30 @@
+@use "variables";
+
+@mixin after-link {
+    display: block;
+    content: "";
+    position: absolute;
+    background-color: variables.$link-text;
+    height: 2px;
+    width: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+@mixin hover-link {
+    width: 100%;
+}
+
+@mixin color-bar($color) {
+    background-color: $color;
+    height: 100%;
+    transition: width 0.4s
+}
+
+@mixin hover-effect($scale, $shadow) {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    &:hover {
+        transform: scale($scale);
+        box-shadow: $shadow;
+    }
+}
