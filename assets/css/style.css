@@ -25,6 +25,7 @@ h1 {
 h2 {
   text-align: center;
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 a {
@@ -109,6 +110,8 @@ footer {
 }
 .skill p {
   margin: 0;
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 .skill-bar {
@@ -116,7 +119,7 @@ footer {
   border-radius: 20px;
   overflow: hidden;
   width: 100%;
-  height: 30px;
+  height: 20px;
 }
 .skill-bar .bar {
   height: 100%;
